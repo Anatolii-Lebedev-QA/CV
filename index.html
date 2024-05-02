@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anatolii Lebedev</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Резюме Анатолия Лебедева">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			content: 'QA';
+		}
+	</style>
+</head>
+<body>
+	<!-- Навигация -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo"></span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#главная">Главная</a></li>
+				        <li><a href="#опыт">Опыт</a></li>
+				        <li><a href="#навыки и стек">Навыки и стек</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Вступление -->
+	<div class="intro section" id="главная">
+		<div class="container">
+			<p>Привет, я Анатолий</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>Я - <br><span id="typed"></span></h1>
+				</div>
+				<p>
+					Роль в создании надёжных и инновационных продуктов невероятно важна. Вместе мы исследуем пути к совершенству, разгадываем тайны кода и создаём будущее безупречного пользовательского опыта.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Опыт работы -->
+	<div class="work section second" id="опыт">
+		<div class="container">
+			<h1>Опыт<br>Работы</h1>
+			<ul class="work-list">
+				<li>2021-2024</li>
+				<li><a href="#">ООО "Эквио"</a></li>
+				<li>QA Engineer</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Навыки и стек -->
+	<div class="skills section second" id="навыки и стек">
+		<div class="container">
+			<h1>Навыки<br>Стек</h1>
+			<ul class="skill-list list-flat">
+				<li>Базовые</li>
+				<li>Внимательность / Любопытство / Добрая въедливость</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Таск-трекер</li>
+				<li>Яндекс трекер</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Просмотр логов</li>
+				<li>Kibana / Sentry</li>
+			</ul>
+            <ul class="skill-list list-flat">
+				<li>Доступ в БД</li>
+				<li>Metabase / DBeaver / Терминал</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Цитата -->
+	<div class="quote">
+		<a href="" class="cv-link">
+			<div class="container text-centered">
+				<h1>Моё резюме</h1>
+			</div>
+		</a>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Мои Контакты</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="tel:+79044727947"><i class="fa fa-phone"></i></a></li>
+						<li><a href="https://t.me/Anatolii705"><i class="fa fa-send"></i></a></li>
+						<li><a href="mailto:lebedev705@yandex.ru"><i class="fa fa-envelope-o"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["QA Engineer", "Тестировщик ПО", "Архитектор качества"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
